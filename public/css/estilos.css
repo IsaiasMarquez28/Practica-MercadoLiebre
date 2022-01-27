@@ -1,7 +1,10 @@
 html {
   font-family: "Roboto", sans-serif;
 }
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 body {
   background-color: #ebebeb;
 }
@@ -18,6 +21,7 @@ body {
   font-size: 24px;
   text-align: center;
   background-color: #1259c3;
+  margin-top: 15px;
 }
 i {
   display: inline;
@@ -40,6 +44,10 @@ i {
   font-size: 18px;
   width: 30%;
 }
+.precios_Container {
+  display: flex;
+}
+
 .descripciones {
   font-size: 16px;
 }
@@ -89,7 +97,7 @@ i {
 .main {
   text-align: center;
   width: 90%;
-  padding-left: 5%;
+  padding-left: 10%;
 }
 .burger-menu ul {
   list-style: none;
@@ -100,18 +108,25 @@ i {
   .descripciones {
     display: none;
   }
-  .burger-menu {
+  .burger-menu ul,
+  li {
     display: none;
+  }
+  .header {
+    margin: 0px;
   }
 }
 
 @media (max-width: 769px) {
   .separacion {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin-bottom: 10px;
   }
+
   .burger-menu {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
   }
   .burger-menu ul {
     display: flex;
@@ -125,9 +140,11 @@ i {
 @media (min-width: 769px) {
   .article_container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+  }
+  .separacion {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    justify-content: space-around;
   }
   .txt2 {
     font-weight: 400;
@@ -148,6 +165,9 @@ i {
   }
   .burger-menu li {
     margin: 0 5px;
+  }
+  .precios_Container p {
+    font-size: 14px;
   }
 }
 
