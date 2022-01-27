@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <div>
+      <h1>Registrate</h1>
+      <h3><a href="/">Home</a></h3>
+      <form action="/" method="get">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" />
+        <br /><br />
+        <label for="usuario">Nombre Usuario</label>
+        <input required type="usuario" name="usuario" id="usuario" />
+        <br /><br />
+        <label for="fecha">Fecha Nacimiento</label>
+        <input type="date" name="fecha" id="fecha" />
+        <br /><br />
+        <label for="domicilio">Domicilio</label>
+        <input type="text" name="domicilio" id="domicilio" />
+        <br /><br />
+
+        <fieldset>
+          <legend>Perfil del Usuario</legend>
+          <label for="vender">Vender</label>
+          <input type="radio" name="vender" id="vender" />
+          <label for="comprar">Comprar</label>
+          <input type="radio" name="comprar" id="comprar" />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Categorías de Interés</legend>
+          <label for="electro">Electro</label>
+          <input type="checkbox" name="electro" id="electro" />
+          <label for="moda">Moda</label>
+          <input type="checkbox" name="moda" id="moda" />
+          <label for="hogar">Hogar</label>
+          <input type="checkbox" name="hogar" id="hogar" />
+          <label for="juguetería">Juguetería</label>
+          <input type="checkbox" name="juguetería" id="juguetería" />
+          <label for="vidasana">Vida Sana</label>
+          <input type="checkbox" name="vidasana" id="vidasana" />
+        </fieldset>
+        <br />
+        <label for="foto">Foto de Perfil</label>
+        <input type="file" name="avatar" id="avatar" /><br /><br />
+
+        <label for="password">Contraseña:</label>
+        <input
+          required
+          type="password"
+          name="password"
+          id="password"
+        /><br /><br />
+        <label for="password">Confirmar Contraseña:</label>
+        <input type="password" name="password" id="password" />
+
+        <br /><br /><br />
+        <button type="submit">Enviar Datos</button>
+        <button type="reset">Limpiar Formulario</button>
+      </form>
+    </div>
+  </body>
+</html>
